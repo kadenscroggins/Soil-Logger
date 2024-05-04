@@ -1,6 +1,7 @@
 # Soil-Logger
-A microcontroller script that logs soil moisture!
+A couple of boards and a sensor cobbled together to log plant moisture to an SD card! In the future I plan on adding the ability for it to use the Wi-Fi functionalities of the ESP32 microcontroller to upload this data to a web server.
 
+![Component assembly](https://i.imgur.com/gtJ4AVE.jpeg)
 
 ## Parts used
 * [Adafruit ESP32-S3 Feather with 4MB Flash 2MB PSRAM - STEMMA QT / Qwiic](https://www.adafruit.com/product/5477)
@@ -24,7 +25,7 @@ A microcontroller script that logs soil moisture!
 6. Push the male headers of the top board all the way into the female headers in the bottom board.
 7. Connect the larger end (JST PH) of the 4-pin cable to the STEMMA soil sensor, and the smaller end (JST SH) to the port in the center of the top board.
 8. Plug the top board into your computer and [install the CircuitPython firmware](https://learn.adafruit.com/adafruit-esp32-s3-feather/circuitpython) used by this project.
-9. Copy the code into the CIRCUITPYTHON drive that appears when plugging in the microcontroller, and install all libraries
+9. Copy the code.py and sd_card_functions.py files into the CIRCUITPYTHON drive that appears when plugging in the microcontroller, and install all libraries in the /lib folder.
     * adafruit_max1704x
     * adafruit_pcf8523
     * adafruit_seesaw
